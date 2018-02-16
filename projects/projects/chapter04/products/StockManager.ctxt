@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=StockManager
+comment0.text=\n\ Manage\ the\ stock\ in\ a\ business.\n\ The\ stock\ is\ described\ by\ zero\ or\ more\ Products.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=StockManager()
+comment1.text=\n\ Initialise\ the\ stock\ manager.\n
+comment2.params=item
+comment2.target=void\ addProduct(Product)
+comment2.text=\n\ Add\ a\ product\ to\ the\ list.\n\ @param\ item\ The\ item\ to\ be\ added.\n
+comment3.params=id\ amount
+comment3.target=void\ delivery(int,\ int)
+comment3.text=\n\ Receive\ a\ delivery\ of\ a\ particular\ product.\n\ Increase\ the\ quantity\ of\ the\ product\ by\ the\ given\ amount.\n\ @param\ id\ The\ ID\ of\ the\ product.\n\ @param\ amount\ The\ amount\ to\ increase\ the\ quantity\ by.\n
+comment4.params=id
+comment4.target=Product\ findProduct(int)
+comment4.text=\n\ Try\ to\ find\ a\ product\ in\ the\ stock\ with\ the\ given\ id.\n\ @return\ The\ identified\ product,\ or\ null\ if\ there\ is\ none\n\ \ \ \ \ \ \ \ \ with\ a\ matching\ ID.\n
+comment5.params=id
+comment5.target=int\ numberInStock(int)
+comment5.text=\n\ Locate\ a\ product\ with\ the\ given\ ID,\ and\ return\ how\n\ many\ of\ this\ item\ are\ in\ stock.\ If\ the\ ID\ does\ not\n\ match\ any\ product,\ return\ zero.\n\ @param\ id\ The\ ID\ of\ the\ product.\n\ @return\ The\ quantity\ of\ the\ given\ product\ in\ stock.\n
+comment6.params=
+comment6.target=void\ printProductDetails()
+comment6.text=\n\ Print\ details\ of\ all\ the\ products.\n
+numComments=7

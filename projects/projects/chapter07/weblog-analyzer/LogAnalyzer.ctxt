@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=LogAnalyzer
+comment0.text=\n\ Read\ web\ server\ data\ and\ analyse\ hourly\ access\ patterns.\n\ \n\ @author\ David\ J.\ Barnes\ and\ Michael\ K\u00F6lling.\n\ @version\ \ \ \ 2016.02.29\n
+comment1.params=
+comment1.target=LogAnalyzer()
+comment1.text=\n\ Create\ an\ object\ to\ analyze\ hourly\ web\ accesses.\n
+comment2.params=logFileName
+comment2.target=LogAnalyzer(java.lang.String)
+comment3.params=
+comment3.target=void\ analyzeHourlyData()
+comment3.text=\n\ Analyze\ the\ hourly\ access\ data\ from\ the\ log\ file.\n
+comment4.params=
+comment4.target=void\ printHourlyCounts()
+comment4.text=\n\ Print\ the\ hourly\ counts.\n\ These\ should\ have\ been\ set\ with\ a\ prior\n\ call\ to\ analyzeHourlyData.\n
+comment5.params=
+comment5.target=void\ printData()
+comment5.text=\n\ Print\ the\ lines\ of\ data\ read\ by\ the\ LogfileReader\n
+comment6.params=
+comment6.target=int\ numberOfAccesses()
+comment7.params=
+comment7.target=int\ busiestHour()
+comment8.params=
+comment8.target=int\ quitestHour()
+numComments=9
