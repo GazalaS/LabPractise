@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+import java.util.stream.Collectors;
 /**
  * Store details of club memberships.
  * 
@@ -38,4 +38,24 @@ public class Club
         //if (members.size > 0)
         return members.size();
     }
+    
+    public ArrayList purge(int month, int year){     
+        //return 
+        
+        //ArrayList<Membership> removed = new ArrayList<>();
+        ArrayList<Membership> removed = members.stream().filter(m -> {
+                                        if ((month == m.getMonth() && year == m.getYear())) {
+                                           return true;
+                                        }
+                                        else if (month < 1 || month > 12){
+                                          System.out.println("Invalid Month. Month should be between 1 and 12");
+                                          return false;
+                                         }
+                                        return false;
+                                       })
+                            .collect(Collectors.toCollection (ArrayList::new));
+                        
+         members.removeAll(removed);
+         return removed;
+        }
 }

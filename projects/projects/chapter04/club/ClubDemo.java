@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /**
  * Provide a demonstration of the Club and Membership
  * classes.
@@ -27,10 +27,20 @@ public class ClubDemo
      */
     public void demo()
     {
+        
         club.join(new Membership("David", 2, 2004));
         club.join(new Membership("Michael", 1, 2004));
+        club.join(new Membership("Gazala", 2, 2004));
+        club.join(new Membership("Abid", 1, 2004));
+        club.join(new Membership("Zidan", 2, 2004));
+        club.join(new Membership("Mike", 1, 2004));
         System.out.println("The club has " +
                            club.numberOfMembers() +
                            " members.");
+        ArrayList <Membership> membersRemoved = club.purge(2,2004);
+        System.out.println("The club has " +
+                           club.numberOfMembers() +
+                           " members.");
+        
     }
 }
