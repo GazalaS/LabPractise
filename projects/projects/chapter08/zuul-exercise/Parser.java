@@ -62,4 +62,18 @@ public class Parser
             return new Command(null, word2); 
         }
     }
+    /** Added for Exercise 8.16
+     * Print out a list of valid command words.
+     */
+    public void showCommands()
+    {
+        commands.showAll();
+    }
+    /** Added for Exercise 8.16
+     * Returns out a list of valid command words.
+     */
+     public String showAllCommands()
+    {
+        return commands.getCommandList();
+    }
 }

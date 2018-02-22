@@ -123,6 +123,14 @@ public class Game
         else if (commandWord.equals("quit")) {
             wantToQuit = quit(command);
         }
+        //Added for Excercise 8.14
+        else if (commandWord.equals("look")) {
+           look();
+        }
+        //Added for Excercise 8.15
+        else if (commandWord.equals("eat")) {
+           eat();
+        }
 
         return wantToQuit;
     }
@@ -140,7 +148,14 @@ public class Game
         System.out.println("around at the university.");
         System.out.println();
         System.out.println("Your command words are:");
-        System.out.println("   go quit help");
+        
+        // Replaced for Exercise 8.15
+        //System.out.println("   go quit help");
+        //parser.showCommands(); changes for exercise 8.18
+        String commandlist = parser.showAllCommands();
+        System.out.println(commandlist);
+        
+        
     }
 
     /** 
@@ -204,5 +219,14 @@ public class Game
             }
             System.out.println();
     }*/
+    
+    //added for Exercise 8.14 
+    private void look(){
+        System.out.println(currentRoom.getLongDescription());
+    }
+        //added for Exercise 8.15
+    private void eat(){
+        System.out.println("You have eaten now and you are not hungry anymore");
+    }
     
 }
